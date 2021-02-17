@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task2</title>
+    <script src="task2.js"></script>
+    <link rel="stylesheet" href="task2Style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+</head>
+<body>
+
+<section class="mainSection">
+<h1>Gymnasts</h1>
+<p>Please enter information about your team of Gymnasts into the form below. You can add as many gymnasts as you like.</p>
+<hr width="40%" style="margin-left:20px;"/>
+<table id="biography">
+    <tr><td width="100">Name:</td><td><input id="name" type="text" /></td></tr>
+    <tr><td width="100">Age:</td><td><input id="age" type="number" /></td></tr>
+    <tr><td width="100">Gender:</td><td><input id="gen" type="text" /></td></tr>
+</table>
+<p>Please enter as many scores as you like. </p>
+<table id="scores">
+    <tr><td width="100">Score 1:</td><td><input id="s1" type="number" /></td></tr>
+    <!--
+    <tr><td width="100">Score 2:</td><td><input id="s2" type="text" /></td></tr>
+    <tr><td width="100">Score 3:</td><td><input id="s3" type="text" /></td></tr>
+    <tr><td width="100">Score 4:</td><td><input id="s4" type="text" /></td></tr>
+    <tr><td width="100">Score 5:</td><td><input id="s5" type="text" /></td></tr>
+    -->
+</table>
+<button id="addFields" onclick="addScores();">Add More Scores</button>
+<button id="newGym" onclick="summarize()">Add New Gymnast</button>
+</section>
+
+<section class="resultsSection">
+<h2>Your Gymnasts</h2>
+<p id="stats"></p>
+</section>
+
+
+
+</body>
+</html>
